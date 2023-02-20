@@ -10,7 +10,7 @@ for (let i = 0; i < data.length; i++) {
 
   let img = document.createElement("img");
   img.setAttribute("src", data[i].image);
-  img.setAttribute("alt", "fish picture");
+  img.setAttribute("alt", "product");
   img.classList.add("card-img-top");
 
   divCard.appendChild(img);
