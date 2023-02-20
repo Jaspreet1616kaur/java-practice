@@ -1,33 +1,18 @@
-//
+console.log(data);
 
-let myName = "jaspreetkaur";
-console.log("my name is", myName);
+let divContainer = document.getElementById("container");
 
-//age
-let myAge = 34;
-console.log("my age is ", myAge);
+for (let i = 0; i < data.length; i++) {
+  //   console.log(data[i]);
+  let divCard = document.createElement("div");
+  divCard.classList.add("card");
+  divCard.classList.add("style", "width:18rem");
 
-//julia age
-let juliaAge = 32;
+  let img = document.createElement("img");
+  img.setAttribute("src", data[i].image);
+  img.setAttribute("alt", "fish picture");
+  img.classList.add("card-img-top");
 
-let ageDiff = 58 - 32;
-console.log("julia age", ageDiff);
-
-// here used some conditinal statement
-let jasAge = 5;
-if (jasAge < 21) {
-  console.log("you are not older than  julia");
-} else {
-  console.log("you are older then julia");
-}
-
-//compare age withjuiaAge
-juliaAge = 13;
-myAge = 73;
-if (juliaAge < myAge) {
-  console.log("julia is younger then me ");
-} else if (juliaAge == myAge) {
-  console.log("You have the same age as Julia");
-} else {
-  console.log("julia is older then me");
+  divCard.appendChild(img);
+  divContainer.appendChild(divCard);
 }
