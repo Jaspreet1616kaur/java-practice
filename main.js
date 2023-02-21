@@ -13,6 +13,21 @@ for (let i = 0; i < data.length; i++) {
   img.setAttribute("alt", "product");
   img.classList.add("card-img-top");
 
+  let cardBody = document.createElement("div");
+  cardBody.classList.add("card-body");
+
+  let h5 = document.createElement("h5");
+  cardBody.classList.add("card-title");
+
+  let p = document.createElement("p");
+  cardBody.classList.add("card-text");
+
+  h5.innerHTML = data[i].title;
+  p.innerHTML = data[i].price;
+
+  cardBody.appendChild(p);
+  cardBody.appendChild(h5);
+  divCard.appendChild(cardBody);
   divCard.appendChild(img);
   divContainer.appendChild(divCard);
 }
