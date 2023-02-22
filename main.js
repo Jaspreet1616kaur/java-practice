@@ -8,6 +8,7 @@ for (let i = 0; i < data.length; i++) {
   divCard.setAttribute("class", "col-sm-12 col-md-6 col-lg-4");
   divCard.classList.add("card");
   divCard.classList.add("col-sm-2");
+  divCard.classList.add("border-warning");
   // divCard.classList.add("style", "width:18rem");
 
   let img = document.createElement("img");
