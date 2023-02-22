@@ -1,12 +1,14 @@
 console.log(data);
 
-let divContainer = document.getElementById("container");
+let divContainer = document.getElementById("card-container");
 
 for (let i = 0; i < data.length; i++) {
   //   console.log(data[i]);
   let divCard = document.createElement("div");
+  divCard.setAttribute("class", "col-sm-12 col-md-6 col-lg-4");
   divCard.classList.add("card");
-  divCard.classList.add("style", "width:18rem");
+  divCard.classList.add("col-sm-2");
+  // divCard.classList.add("style", "width:18rem");
 
   let img = document.createElement("img");
   img.setAttribute("src", data[i].image);
